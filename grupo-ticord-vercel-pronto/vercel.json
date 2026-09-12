@@ -1,43 +1,33 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
+      "source": "/",
+      "destination": "/index.html"
     },
     {
-      "src": "*.html",
-      "use": "@vercel/static"
+      "source": "/contato",
+      "destination": "/contato.html"
     },
     {
-      "src": "*.css",
-      "use": "@vercel/static"
+      "source": "/admin",
+      "destination": "/admin.html"
     },
     {
-      "src": "assets/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "source": "/cord",
+      "destination": "/cord.html"
     },
     {
-      "src": "/style.css",
-      "dest": "/style.css"
+      "source": "/tickora",
+      "destination": "/tickora.html"
     },
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "source": "/ingresse-roblox",
+      "destination": "/ingresse-roblox.html"
     },
     {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/([^/.]+)",
-      "dest": "/$1.html"
+      "source": "/shopping-mall-blox",
+      "destination": "/shopping-mall-blox.html"
     }
   ]
 }
